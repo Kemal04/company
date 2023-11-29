@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import main_banner from '../../../assets/banner/main-banner.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faCheck, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 import icon_1 from '../../../assets/icons/1.png'
 import icon_2 from '../../../assets/icons/2.png'
@@ -13,6 +13,9 @@ import card_3 from '../../../assets/cards/3.png'
 import card_4 from '../../../assets/cards/4.png'
 import card_5 from '../../../assets/cards/5.png'
 import card_6 from '../../../assets/cards/6.png'
+import card_7 from '../../../assets/cards/7.jpg'
+import card_8 from '../../../assets/cards/8.png'
+import bg_img from '../../../assets/cards/bg.jpg'
 
 const Home = () => {
 
@@ -173,6 +176,81 @@ const Home = () => {
                                 <img src={card_2} alt="" className="img-fluid h-100" style={{ cursor: "pointer" }} />
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mt-5 pt-5">
+                <div className="row align-items-end">
+                    <div className="col-xl-12">
+                        <div className="fs-5">Once you’ve settled on a business</div>
+                    </div>
+                    <div className="col-xl-6">
+                        <div className="h1 mt-4" style={{ width: "80%", lineHeight: "60px" }}>High Performance Services For Multiple Industries.</div>
+                    </div>
+                    <div className="col-xl-6 text-end">
+                        <Link to='' className="btn btn-primary btn-lg px-5 rounded-0">View more</Link>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mt-5 pt-5">
+                <div className="row gx-5">
+                    <div className="col-xl-4 mb-4">
+                        <div className="card border-0">
+                            <img src={card_8} alt="" className="img-fluid" />
+                            <div className="card-body px-0">
+                                <div>JANUARY 28, <span className="mx-2">|</span> 2020 NO COMMENTS</div>
+                                <h5 className="my-4">Addiction When Gambling Becomes Harness The Power.</h5>
+                                <Link to='/' className="text-decoration-none text-primary">CONTINUE READING <FontAwesomeIcon icon={faArrowRight} /></Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-4 mb-4">
+                        <div className="card border-0">
+                            <img src={card_8} alt="" className="img-fluid" />
+                            <div className="card-body px-0">
+                                <div>JANUARY 28, <span className="mx-2">|</span> 2020 NO COMMENTS</div>
+                                <h5 className="my-4">Addiction When Gambling Becomes Harness The Power.</h5>
+                                <Link to='/' className="text-decoration-none text-primary">CONTINUE READING <FontAwesomeIcon icon={faArrowRight} /></Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-4 mb-4">
+                        <div className="card border-0">
+                            <img src={card_8} alt="" className="img-fluid" />
+                            <div className="card-body px-0">
+                                <div>JANUARY 28, <span className="mx-2">|</span> 2020 NO COMMENTS</div>
+                                <h5 className="my-4">Addiction When Gambling Becomes Harness The Power.</h5>
+                                <Link to='/' className="text-decoration-none text-primary">CONTINUE READING <FontAwesomeIcon icon={faArrowRight} /></Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container-fluid mt-5 pt-5 px-0">
+                <div className="row g-0">
+                    <div className="col-xl-6 d-flex flex-column justify-content-center align-items-end text-white" style={{ background: `url(${bg_img})` }}>
+                        <div className="w-50 me-5">
+                            <div style={{ color: "#9fabbe" }}>Features That You Will Get</div>
+                            <div className="h1 mt-3 mb-5">All startups need to make their business work</div>
+                            <div className="d-flex mb-4">
+                                <FontAwesomeIcon icon={faCheck} className="bg-primary rounded-circle me-3 mt-2" style={{ padding: "7px 9px" }} />
+                                <div style={{ color: "#9fabbe", lineHeight: "30px" }}>Having a home based business is a wonderful asset to your life. The problem still stands,</div>
+                            </div>
+                            <div className="d-flex mb-4">
+                                <FontAwesomeIcon icon={faCheck} className="bg-primary rounded-circle me-3 mt-2" style={{ padding: "7px 9px" }} />
+                                <div style={{ color: "#9fabbe", lineHeight: "30px" }}>Promotional Advertising Specialty You Ve Waited Long Enough</div>
+                            </div>
+                            <div className="d-flex mb-4">
+                                <FontAwesomeIcon icon={faCheck} className="bg-primary rounded-circle me-3 mt-2" style={{ padding: "7px 9px" }} />
+                                <div style={{ color: "#9fabbe", lineHeight: "30px" }}>Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing 2 200 Letters</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-6">
+                        <img src={card_7} alt="" style={{ height: "700px", width: "100%", objectFit: "cover" }} />
                     </div>
                 </div>
             </div>
