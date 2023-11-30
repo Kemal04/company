@@ -222,7 +222,7 @@ const Home = () => {
             </div>
 
             <div className="container mt-5 pt-5">
-                <div className="row gx-5">
+                <div className="row gx-lg-5 gx-0">
                     <div className="col-xl-4 mb-4">
                         <div className="card border-0">
                             <img src={card_8} alt="" className="img-fluid" />
@@ -259,7 +259,7 @@ const Home = () => {
             <div className="container-fluid mt-5 pt-5 px-0">
                 <div className="row g-0">
                     <div className="col-xl-6 d-flex flex-column justify-content-center align-items-end text-white" style={{ background: `url(${bg_img})` }}>
-                        <div className="w-50 me-5">
+                        <div className="w-50 me-lg-5 me-0">
                             <div style={{ color: "#9fabbe" }}>Features That You Will Get</div>
                             <div className="h1 mt-3 mb-5">All startups need to make their business work</div>
                             <div className="d-flex mb-4">
