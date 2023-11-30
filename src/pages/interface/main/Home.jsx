@@ -17,6 +17,16 @@ import card_7 from '../../../assets/cards/7.jpg'
 import card_8 from '../../../assets/cards/8.png'
 import bg_img from '../../../assets/cards/bg.jpg'
 
+import brand_1 from '../../../assets/brands/1.jpg'
+import brand_2 from '../../../assets/brands/2.jpg'
+import brand_3 from '../../../assets/brands/3.jpg'
+import brand_4 from '../../../assets/brands/4.jpg'
+import brand_5 from '../../../assets/brands/5.jpg'
+import brand_6 from '../../../assets/brands/6.jpg'
+import brand_7 from '../../../assets/brands/7.jpg'
+import brand_8 from '../../../assets/brands/8.jpg'
+import brand_9 from '../../../assets/brands/9.jpg'
+
 const Home = () => {
 
     const options = {
@@ -30,6 +40,23 @@ const Home = () => {
         autoplaySpeed: 1,
         speed: 1000,
     };
+
+    const option2 = {
+        type: 'loop',
+        perPage: 5,
+        focus: 0,
+        omitEnd: true,
+        perMove: 1,
+        pagination: false,
+        arrows: false,
+        breakpoints:
+        {
+            991: { perPage: 3, gap: '1.5rem', },
+            768: { perPage: 2, gap: '1.5rem', },
+            575: { perPage: 2, gap: '1rem', },
+        }
+    };
+
 
     return (
         <>
@@ -253,6 +280,41 @@ const Home = () => {
                         <img src={card_7} alt="" style={{ height: "700px", width: "100%", objectFit: "cover" }} />
                     </div>
                 </div>
+            </div>
+
+            <div className="container my-5 py-5">
+                <div className="h1 text-center mb-5 pb-4">Our Partners</div>
+                <Splide options={option2} hasTrack={false}>
+                    <SplideTrack>
+                        <SplideSlide>
+                            <img src={brand_1} alt="" className="img-fluid" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={brand_2} alt="" className="img-fluid" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={brand_3} alt="" className="img-fluid" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={brand_4} alt="" className="img-fluid" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={brand_5} alt="" className="img-fluid" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={brand_6} alt="" className="img-fluid" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={brand_7} alt="" className="img-fluid" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={brand_8} alt="" className="img-fluid" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={brand_9} alt="" className="img-fluid" />
+                        </SplideSlide>
+                    </SplideTrack>
+                </Splide>
             </div>
         </>
     )

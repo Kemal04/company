@@ -17,7 +17,7 @@ const Navbar = () => {
 
     const navbarStyle = {
         background: scrollY > 50 ? "white" : "transparent",
-        shadow: '0 0 10px 0 rgba(0, 0, 0, 0.1)',
+        boxShadow: scrollY > 50 ? '0 0.5rem 1rem rgba(0, 0, 0, 0.15)' : null,
         transition: "0.3s",
     };
 
